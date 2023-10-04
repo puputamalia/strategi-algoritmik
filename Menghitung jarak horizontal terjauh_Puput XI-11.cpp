@@ -3,6 +3,7 @@
 #include <string>
 #include <cstdlib>
 #include <cmath>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -19,9 +20,9 @@ int main() {
 
     cin >> s;
     cin >> v;
-    sinA = sin(2 * s * 3.141 / 180);
-    jarak = v * sinA / 10;
-    cout << jarak << endl;
+    sinA = sin(2 * s * 3.141 / 180)*10;
+    jarak = (v * sinA)/10;
+    cout << fixed<<setprecision(1)<<jarak << endl;
     return 0;
 }
 
